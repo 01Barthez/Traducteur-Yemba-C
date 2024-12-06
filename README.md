@@ -80,6 +80,18 @@ Pour aborder ce projet, nous avons suivi les étapes suivantes :
     Ajouter une interface graphique minimale ou une version web et/ou mobile interactive et intuitive.
     Ajout d'une gigantesque base de données pour inclure tous les mots de la langue française
 
+## Utilisation
+
+    ### cloner le repository
+        ```git clone git@github.com:01Barthez/Traducteur-Yemba-C.git
+        cd  Traducteur-Yemba-C
+        ```
+
+    ### Compiler et lancer le programme
+        ``` make && make run```
+    
+    si toute se passe bien, ou plutot quand tout va bien se passer, vous pourrez commencer a utiliser ma petite app...
+
 ## Conclusion
 
 ça n'a pas été facile mais ça été bien.
