@@ -46,7 +46,7 @@ int main()
             break;
         }
 
-        printf("\n\n\n❓ Voulez vous ???? (oui✅ / non ❌)-(o/n):  ");
+        printf("\n\n\n❓ Voulez vous effectuer une autre action ???? (oui✅ / non ❌)-(o/n):  ");
         scanf("%s", test);
     } while (strcasecmp(test, "oui") == 0 || strcasecmp(test, "o") == 0);
 
