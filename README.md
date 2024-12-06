@@ -2,7 +2,7 @@
 
 ## Objectif du projet
 
-Ce projet est un traducteur simple de mots français vers la langue yembà, une langue originaire des peuples bamilékés de l'Ouest Cameroun. L'objectif est de créer un programme en langage C qui permet à un utilisateur de traduire des mots en utilisant une table de hachage comme structure de données principale.
+Ce projet est un traducteur simple de mots français vers la langue yembà, une langue originaire des peuples bamilékés de l'Ouest Cameroun (le yemba est encore appelé appelée *atsang-bangwa*, *bafou*, *bamileke-yemba*, *dschang* ou *tchang* pour plus d'info [*cliquez ici*](https://fr.wikipedia.org/wiki/Yemba)). L'objectif est de créer un programme en langage C qui permet à un utilisateur de traduire des mots en utilisant une table de hachage comme structure de données principale.
 
 ## Approche méthodologique
 
@@ -10,21 +10,25 @@ Pour aborder ce projet, nous avons suivi les étapes suivantes :
 
 ### Étape 1 : Analyse des exigences
 
-    Identifier les fonctionnalités essentielles : traduction, recherche dans un dictionnaire, gestion des données avec une table de hachage.
-    Choisir une structure de données efficace pour optimiser les performances (table de hachage).
+    Identifier les fonctionnalités essentielles :
+    - **traduction**, 
+    - **recherche dans un dictionnaire**, 
+    - **gestion des données avec une table de hachage**.
+    - Choisir une structure de données efficace pour optimiser les performances (table de hachage).
 
 ### Étape 2 : Conception modulaire
 
     Diviser le programme en modules :
         hash_table : Gestion de la table de hachage.
         file_handler : Chargement des données depuis le fichier texte.
+        app_function: Gestion des fonctions du programme.
         main : Interaction avec l'utilisateur.
-    Créer un fichier makefile pour simplifier la compilation.
+        makefile: Simplifier la compilation.
 
 ### Étape 3 : Développement
 
     Implémentation progressive des modules avec des tests à chaque étape.
-    Documentation du code avec des commentaires pour chaque fonction.
+    Documentation du code avec des commentaires et des noms de variables intuitives
 
 ### Étape 4 : Test et validation
 
@@ -37,8 +41,9 @@ Pour aborder ce projet, nous avons suivi les étapes suivantes :
 
 **main.c**: Point d'entrée du programme.<br>
 **hash_table.c/h**: Gestion de la table de hachage (création, insertion, recherche, libération).<br>
+**app_function.c/h**: Gestion des fonctions de l'appli pour plus de modulariter (affichage, liberation de memoire, insertion, recherche...).<br>
 **file_handler.c/h**:	Gestion du fichier words.txt pour charger les mots et leurs traductions.<br>
-**words.txt**:	Fichier contenant les mots et leurs traductions en Yemba.<br>
+**words.txt**:	Fichier contenant les mots et leurs traductions en Yemba, séparés avec des espaces.<br>
 **makefile**:	Automatisation de la compilation et des tâches associées.<br>
 **doc.txt**:	Documentation du projet, méthodologie et analyse. <br>
 
@@ -72,11 +77,11 @@ Pour aborder ce projet, nous avons suivi les étapes suivantes :
 
 ## Améliorations futures
 
-    Ajouter une interface graphique minimale ou une version web interactive.
+    Ajouter une interface graphique minimale ou une version web et/ou mobile interactive et intuitive.
+    Ajout d'une gigantesque base de données pour inclure tous les mots de la langue française
 
 ## Conclusion
 
-Ce projet illustre l'utilisation efficace de structures de données en C (table de hachage) pour résoudre des problèmes pratiques comme un traducteur simple. Malgré les défis rencontrés, nous avons réussi à produire un programme fonctionnel et bien documenté. Les bases posées ici pourraient être enrichies pour développer un outil plus robuste et plus complet.
-
+ça n'a pas été facile mais ça été bien.
 
 By [**Barthez Kenwou**](https://github.com/01Barthez)

@@ -1,23 +1,55 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "hash_table.h"
 #include "file_handler.h"
+#include "app_function.h"
 
-int main() {
+int main()
+{
+    const char words_file[] = "words.txt";
     KLB_HashTable *dictionary = KLB_createHashTable();
-    KLB_loadDictionary(dictionary, "words.txt");
+    KLB_loadDictionary(dictionary, words_file);
 
-    char word[256];
-    printf("Entrez un mot en langue nationale : ");
-    scanf("%s", word);
+    char test[3];
 
-    const char *translation = KLB_search(dictionary, word);
-    if (translation) {
-        printf("Traduction en Yemba : %s\n", translation);
-    } else {
-        printf("Mot non trouvé dans le dictionnaire.\n");
-    }
+    do
+    {
+        displayUserChoice();
 
-    KLB_freeHashTable(dictionary);
+        int choice = getUserChoice();
+
+        switch (choice)
+        {
+        case 1:
+            /* Traduire un mot du français vers le yemba */
+            translateWord(dictionary);
+            break;
+
+        case 2:
+            /* Ajouter un mot dans le dictionnaire */
+            addWord(dictionary, words_file);
+            break;
+
+        case 3:
+            /* Voir les mots du dictionnaire */
+            displayDictionary(dictionary);
+            break;
+
+        case 4:
+            /* Quitter le programme */
+            cleanApp(dictionary);
+            return 0;
+            break;
+
+        default:
+            break;
+        }
+
+        printf("\n\n\n❓ Voulez vous ???? (oui✅ / non ❌)-(o/n):  ");
+        scanf("%s", test);
+    } while (strcasecmp(test, "oui") == 0 || strcasecmp(test, "o") == 0);
+
+    cleanApp(dictionary);
     return 0;
 }

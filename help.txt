@@ -1,0 +1,31 @@
+########### Application Traducteur en Langue Yemba ###########
+
+🌟✨ *********** Traducteur en Langue Yemba ************* ✨🌟
+
+1️⃣ Traduire un mot :
+   Exemple : 
+       Entrez un mot en langue officielle - (Français) 🌍 : banane
+       📖 Traduction en Yemba : 🌟 nkedy'n 🌟
+
+2️⃣ Ajouter un mot au dictionnaire :
+   Exemple :
+       📝 Entrez le mot en langue officielle : chat
+        ✍️ Entrez la traduction en Yemba : puchi
+
+	✅ Mot ajouté avec succès 🎉!
+
+   Si le mot existe déjà :
+       ⚠️ Ce mot existe déjà dans le dictionnaire.
+
+3️⃣ Voir les mots du dictionnaire :
+   Exemple :
+       📚 Liste des mots disponibles dans le dictionnaire :
+           🔹- pomme
+           🔹- maison
+           🔹- école
+
+4️⃣ Quitter :
+   Exemple :
+       🎉 Merci d'avoir utiliser notre application,
+		    Barthez vous tire ses reverence 😊 !!
+

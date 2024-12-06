@@ -6,7 +6,9 @@
 void KLB_loadDictionary(KLB_HashTable *table, const char *filename) {
     FILE *file = fopen(filename, "r");
     if (!file) {
-        perror("Erreur d'ouverture du fichier");
+        printf("\n\n❌ Fichier \"%s\" introuvable.\n", filename);
+        perror("\nVeuillez créer le fichier et y ajouter des mots avant de relancer l'application.\n");
+     
         exit(EXIT_FAILURE);
     }
     char key[256], value[256];

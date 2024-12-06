@@ -1,16 +1,16 @@
 #ifndef KLB_HASH_TABLE_H
 #define KLB_HASH_TABLE_H
 
-#define KLB_HASH_SIZE 26  // Nombre de lettres dans l'alphabet
+#define KLB_HASH_SIZE 26
 
 typedef struct KLB_Node {
-    char *key;              // Mot en langue nationale
-    char *value;            // Traduction en Yemba
-    struct KLB_Node *next;  // Liste chaînée pour collisions
+    char *key;             
+    char *value;           
+    struct KLB_Node *next;  
 } KLB_Node;
 
 typedef struct {
-    KLB_Node *buckets[KLB_HASH_SIZE]; // Tableau de listes chaînées
+    KLB_Node *buckets[KLB_HASH_SIZE];
 } KLB_HashTable;
 
 KLB_HashTable* KLB_createHashTable();
